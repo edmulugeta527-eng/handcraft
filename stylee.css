@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+.navbar{
+display: flex;
+justify-content: space-between;
+padding: 15px 40px ;
+background: white;
+}
+#logo{
+    font-size: 20px;
+    font-weight:bolder;
+}
+.left{
+   gap: 40px;
+    display: flex;
+}
+   .left a{
+   text-decoration:none ;
+   color: rgb(109, 93, 93);
+   font-size: 16px;
+}
+.left a:first-child{
+    color: black;
+}
+.right{
+display: flex;
+gap: 20px;
+}
+.right a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.main{
+    height: 90vh;
+    background-image:url(photos/photo_4_2026-03-12_00-13-00.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    color: white;
+    
+}
+.main-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.main h1{
+    font-size: 50px;
+    margin-bottom:50px ;
+
+}
+.main p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+}
+button{
+    background: #e78d48;
+    border-radius:8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 10px;
+    justify-content: space-between;
+}
+
+
+.text{
+    display: flex;
+align-items: center;
+justify-content: space-between;
+ padding: 15px  40px  ;
+background: white;
+color: gray;
+}
+.text h2{
+    color: black;
+}
+.text a{
+text-decoration: none;
+    color: rgb(37, 105, 37);
+    font-size: 16px;
+    
+}
+.product{
+    display: flex;
+    gap: 5px;
+   
+}
+.product img{
+     width: 300px;
+     height: 300px;
+    border-radius: 8px;
+    margin-right:5px ;
+    margin-left:5px;
+}
+.product-name{
+    justify-content: space-between;
+    font-weight: bold;
+    display: flex;
+    gap: 20px;
+}
+.product-price{
+    color: gray;
+}
+.cart{ 
+    background:#2f7d5b ;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    justify-content:center;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding: 5px;
+    background-color: rgb(239, 247, 247);
+    height: 200px;
+}
+.aaa{
+    padding-top: 55px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.first h3{
+    text-align: center;
+    font-size: 15px;
+}
+.first p{
+    color:  gray;
+    padding : 10px;
+}
+
+.last{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    border-top: 1px solid #ddd;
+     padding: 20px;
+      background color: rgb(49, 42, 33);
+}
+.last h3{
+    font-size:18px ;
+}
+
+.ooo p{
+color: gray;
+padding-top: 15px;
+
+}
+.second h3{
+  padding-bottom: 5px;
+}
+.second a{
+    text-decoration: none;
+    color: gray;
+    padding: 5px;
+    display: flex;
+   
+}
+
+.contact a{
+    text-decoration: none;
+    color: gray;
+    
+}
+.contact h3{
+    padding-bottom: 15px; 
+}
+.craft{
+    text-align: center;
+    color: gray;
+    font-size: 15px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    
+}
