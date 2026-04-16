@@ -29,6 +29,9 @@ background: white;
 display: flex;
 gap: 20px;
 }
+.right span{
+ cursor: pointer;   
+}
 .right a{
     text-decoration: none;
     color: black;
@@ -72,8 +75,45 @@ button{
     font-weight: 10px;
     justify-content: space-between;
 }
+.cart{
+position: fixed;
+right: -400px;
+top: 0;
+width: 300px;
+height: 100%;
+background: white;
+box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+padding: 20px;
+transition: 0.3s;
+overflow-y: auto;
+}
 
+.cart.active{
+right:0;
+display: block;
+}
 
+.cart-item{
+margin-bottom:10px;
+border-bottom:1px solid #ddd;
+padding:5px;
+ display: flex;
+   align-items: center;
+}
+.cart-item img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+.close-cart{
+position:absolute;
+top:20px;
+right:10px;
+background:none;
+border:none;
+font-size:20px;
+cursor:pointer;
+}
 .text{
     display: flex;
 align-items: center;
@@ -112,7 +152,7 @@ text-decoration: none;
 .product-price{
     color: gray;
 }
-.cart{ 
+.car{ 
     background:#2f7d5b ;
     color: white;
     width: 35px;
@@ -122,8 +162,12 @@ text-decoration: none;
     font-size: 20px;
     cursor: pointer;
     display: flex;
+    margin-left: 8px;
+    
 }
-
+.car.added {
+  color: limegreen; /* highlight when added */
+}
 .first{
     display: flex;
     justify-content: space-between;
@@ -189,9 +233,117 @@ padding-top: 15px;
     border-top: 1px solid #ddd;
     
 }
-/* Responsive Styles for max-width: 720px */
+.www{
+    display: flex;
+    justify-content: space-between;
+}
+.www a{
+    color: gray;
+}
+.eee{
+    height: 70%;
+    
+}
+.eee p{
+    padding: 60px;
+    text-align: center;
+    color: gray;
+} 
 
-@media screen and (max-width: 720px) {
+.rrr p{
+    padding-bottom: 20px;
+}
+.rrr button{
+width: 100%;
+}
+.ttt{
+    display: flex;
+    justify-content: space-between;
+}
+.uuu {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+.uuu h1 {
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+}
+.uuu input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.uuu {
+  position: relative; /* allows absolute positioning inside */
+}
+
+#closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  text-decoration: none;
+  color: #888;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#closeBtn:hover {
+  color: #000;
+}
+
+.login {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+.login:hover {
+  background: #45a049;
+}
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+.modal.active {
+  display: flex; /* show when active */
+}
+.toggleCart {
+  font-size: 20px;   /* cart size */
+  color: green;
+  position: relative; /* allows badge positioning */
+  cursor: pointer;
+}
+
+#cartCount {
+  background: rgb(0, 255, 30);
+  color: rgb(10, 10, 10);
+  border-radius: 90%;
+  padding: 2px 6px;
+  font-size: 8px;
+  position: absolute;
+  top: 10px;   /* adjust until it sits right on the cart */
+  right: 30px; /* adjust until it sits right on the cart */
+  display: none; /* hidden until first product is added */
+}
+
+/* Responsive Styles for max-width: 768px */
+
+@media screen and (max-width: 768px) {
     
     /* NAVBAR */
     .navbar {

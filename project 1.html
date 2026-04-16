@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport"  content="width=device_width, initial_scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project 1</title>
     <link rel="stylesheet" href="./stylee.css">
-   
 </head>
 <body >
     <header>
@@ -13,12 +12,16 @@
         HandCraft
     </div>
     <div class="left">
-    <a href="#">Home  </a>
+    <a href="#">Home</a>
     <a href="#">About</a>
     <a href="#">Contact us</a>
     </div>
     <div class="right">
-        <a href="#"> &#128722; SignUp</a>
+         <a href="#" id="signupLink"> SignUp  </a>
+        <span onclick="toggleCart()">
+            &#128722;
+            <span id="cartCount"></span> 
+        </span>
     </div>
 </nav>
 </header>
@@ -32,6 +35,41 @@
     <button>Shop collection &#8594;</button>
     </div>
 </section>
+
+<section>
+<div id="cart" class="cart">
+<div class="www">
+    <h2>Your Cart</h2>
+<a href"#" class="close-cart" onclick="toggleCart()">X</a>
+</div>
+<div class="eee"> 
+    <p>Your cart is empty. </p></div>
+    <div class="rrr">
+       
+<p class="ttt">Subtotal: <span id="total">$0.00</span></p>
+<p style="color: gray;">Shopping & Taxes Calculated at checkout</p>
+<button>Proceed to Pay</button>
+</div>
+</div>
+</section>
+<section id="signupModal" class="modal">
+    <form>
+        <div class="uuu">
+           <a href="#" id="closeBtn">X</a>
+        <h1>Join HandCraft</h1>
+        <p>SignUp to recieve Artisan Stories and exclusive <br>offers.</p>
+        <label for="text">Full Name</label><br>
+        <input type="text" name="text" placeholder="John Doe"><br>
+        <label for="text">Email Address</label><br>
+        <input type="email" name="email" placeholder="John@example.com"><br>
+        <label for="text">Password</label><br>
+        <input type="password" name="password" placeholder="min.8 characters"><br>
+        <input type="submit" class="login" value="create account">
+        <div class="register">
+    </div>
+</form>
+</section>
+
 <section>
         <div class="text">
         <div>
@@ -45,25 +83,25 @@
         <div class="product">   
             <div>
                 <img src="./photos/photo_3_2026-03-12_11-54-28.jpg" alt="candle">
-                <p class="product-name"> Sage and Cedar Candle<span class="cart">&#128717;</span></p>
+                <p class="product-name"> Sage and Cedar Candle<span class="car">&#128717;</span></p>
                 <p class="product-price">$34</p>
             </div>
             <div>
                 <img src="photos/photo_5_2026-03-12_11-54-28.jpg" alt="Mugs">
                  
-                <p class="product-name"> Artisan Ceramic Mug<span class="cart">&#128717;</span></p>
+                <p class="product-name"> Artisan Ceramic Mug<span class="car">&#128717;</span></p>
                 <p class="product-price">$28</p>
             </div>
             <div >
                 <img src="photos/photo_7_2026-03-12_11-54-28.jpg" alt="Tote Bags">
                   
-                <p class="product-name">Linen Market Tote<span class="cart">&#128717;</span></p>
+                <p class="product-name">Linen Market Tote<span class="car">&#128717;</span></p>
                 <p class="product-price">$42</p>
             </div>
             <div>
                 <img src="photos/photo_10_2026-03-12_11-54-28.jpg" alt=" Soaps">
                 
-                <p class="product-name">Harban Garden Soap<span class="cart">&#128717;</span></p>
+                <p class="product-name">Harban Garden Soap<span class="car">&#128717;</span></p>
                 <p class="product-price">$16</p>
             </div>
             </div>
@@ -105,5 +143,6 @@
     </div>
     </footer>
 </section>
+   <script src="java.js"></script>
 </body>
 </html>
